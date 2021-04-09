@@ -1,0 +1,12 @@
+<div class="card" style="width: 18rem;">
+  <div class="card-body"  *ngFor="let quiz of allQuizzes">
+    {{ weather }}
+    <h5 class="card-title">{{ quiz.title }} </h5>
+    <h6 class="card-subtitle mb-2 text-muted">{{ quiz.description }}</h6>
+    <p class="card-text">Shuffle Answers: </p>
+    <span class="badge rounded-pill" [ngClass]="{'bg-success': quiz.shuffleAnswers,  'bg-danger': !quiz.shuffleAnswers}">{{quiz.shuffleAnswers}}</span>    <p class="card-text"></p>
+    <p class="card-text"></p>
+    <p class="card-text"></p>
+
+  </div>
+</div>
